@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(-45deg, #ac4b2e, #bb2c63, #1d82a7, #1a9b7d);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+section h1 {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+section p {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+section span {
+  display: flex;
+  justify-content: space-around;
+}
+
+section span img {
+  width: 64px;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
